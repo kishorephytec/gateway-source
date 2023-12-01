@@ -1,0 +1,11 @@
+[Unit]
+Description=Transport Process
+Requires=network.target
+[Service]
+Type=simple
+User=root
+ExecStart=python3 /usr/local/lib/python3.9/dist-packages/wirepas_gateway/transport_service.py --settings=/root/gateway-source/transport_settings.yml
+Restart=always
+RestartSec=5
+[Install]
+WantedBy=multi-user.target

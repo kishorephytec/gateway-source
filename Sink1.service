@@ -1,10 +1,10 @@
 [Unit]
-Description=sink manager for sink connected to /dev/ttyUSB0
+Description=sink manager for sink connected to /dev/ttymxc2
 Requires=getty.target
 [Service]
 Type=simple
 User=root
-ExecStart=/root/gateway-source/sinkService -b 115200 -p /dev/ttyUSB0 -i 1
+ExecStart=/root/gateway-source/sinkService -b 115200 -p /dev/ttymxc2 -i 1
 Restart=always
 RestartSec=5
 [Install]

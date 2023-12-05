@@ -4,7 +4,7 @@ Requires=getty.target
 [Service]
 Type=simple
 User=root
-ExecStart=/root/wirepas/sinkService -b 115200 -p /dev/ttyUSB0 -i 1
+ExecStart=/root/gateway-source/sinkService -b 115200 -p /dev/ttyUSB0 -i 1
 Restart=always
 RestartSec=5
 [Install]
